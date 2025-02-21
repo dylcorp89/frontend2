@@ -23,7 +23,7 @@ class SouscriptionController extends Controller
     {
         try {
             // Appel du service pour créer la souscription
-           // dd($request);
+          
             $souscription = $this->apiService->createSubscriptions($request);
 
 
