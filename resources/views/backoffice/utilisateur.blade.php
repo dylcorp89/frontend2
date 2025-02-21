@@ -27,7 +27,7 @@
                     <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['idUtilisateur'] }}</td>
 
                     <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['prenoms'] }} {{ $souscription['nom'] }}</td>
-                    <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['role']['libelle'] }}</td>
+                    <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['libelle'] }}</td>
 
                     <td class="py-4 px-4 text-sm text-gray-700">
                         <a href="" class="text-blue-500 hover:text-blue-700 flex items-center">
