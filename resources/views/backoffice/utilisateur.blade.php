@@ -14,9 +14,10 @@
         <table class="w-full">
             <thead>
                 <tr class="bg-gray-100">
-                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600">Identifiant</th>
 
-                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600">Nom & Prenoms</th>
+
+                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600">Nom</th>
+                    <th class="py-3 px-4 text-left text-sm font-medium text-gray-600">Prenoms</th>
                     <th class="py-3 px-4 text-left text-sm font-medium text-gray-600">Rôle</th>
                     <th class="py-3 px-4 text-left text-sm font-medium text-gray-600">Action</th>
                 </tr>
@@ -24,16 +25,16 @@
             <tbody>
                 @foreach($liste as $souscription)
                 <tr class="border-t hover:bg-gray-50">
-                    <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['idUtilisateur'] }}</td>
 
-                    <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['prenoms'] }} {{ $souscription['nom'] }}</td>
+                    <td class="py-4 px-4 text-sm text-gray-700"> {{ $souscription['nom'] }}</td>
+                    <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['prenoms'] }} </td>
                     <td class="py-4 px-4 text-sm text-gray-700">{{ $souscription['libelle'] }}</td>
 
                     <td class="py-4 px-4 text-sm text-gray-700">
                         <a href="" class="text-blue-500 hover:text-blue-700 flex items-center">
                             <i class="ri-pencil-line mr-2"></i> Modifier
                         </a>
-                        <a href="" class="text-red-500 hover:text-red-700 ml-4 flex items-center">
+                        <a href="{{ $souscription['id'] }}" class="text-red-500 hover:text-red-700 ml-4 flex items-center">
                             <i class="ri-delete-bin-5-line mr-2"></i> Supprimer
                         </a>
                     </td>

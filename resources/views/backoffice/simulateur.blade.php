@@ -61,13 +61,6 @@
                         <label class="font-semibold block mb-2">Déterminer la puissance du véhicule</label>
 <input type="number" class="w-full border border-gray-300 p-2 rounded-lg" name="puissance" min="1" max="24">
 
-
-                        {{--  <select class="w-full border border-gray-300 p-2 rounded-lg" name="puissance" >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3" selected>3</option>
-                            <option value="4">4</option>
-                        </select>  --}}
                     </div>
 
                     <div class="w-1/2">
@@ -89,7 +82,7 @@
                 </div>
                 <div class="w-1/2">
                     <label class="font-semibold block mb-2">Valeur vénale du véhicule</label>
-                    <input type="text" name="valeurVenal"  placeholder="FCFA" class="w-full border border-red-500 p-2 rounded-lg">
+                    <input type="text" name="valeurVenal"  placeholder="FCFA" class="w-full border  p-2 rounded-lg">
 
                 </div>
             </div>
