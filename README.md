@@ -8,7 +8,7 @@ NSIAGO AUSSR est une application web permettant aux membres de l'association Act
 - **Base de données** : MySQL
 - **Authentification** : JWT (JSON Web Token)
 - **Sécurité** : Rate limiting, protection CSRF
-- **Conteneurisation** : Docker (optionnel)
+
 
 ## Fonctionnalités
 - **Gestion des utilisateurs** (inscription, connexion, réinitialisation de mot de passe, gestion des rôles Amazone/Admin)
@@ -45,9 +45,23 @@ NSIAGO AUSSR est une application web permettant aux membres de l'association Act
    ```sh
    php artisan serve
    ```
+   
+ ```sh
+ 
+ ROLE ADMIN
+
+  login : admin
+ password : chance@@@@##4599_
+
+
+ROLE AMAZONE
+   login :  user
+   password : user123
+
+   ```
 
 ## API
-L'application expose une API RESTful avec les routes suivantes :
+L'application consomme une API RESTful avec les routes suivantes :
 
 | Méthode | Endpoint | Description |
 |----------|---------|-------------|
