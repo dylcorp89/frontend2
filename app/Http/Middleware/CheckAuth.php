@@ -19,7 +19,7 @@ class CheckAuth
     public function handle(Request $request, Closure $next)
     {
         // Vérifie si le token existe dans l'en-tête Authorization
-        $token =  $token = session('jwt_token');
+         $token = session('jwt_token');
 
         if (!$token) {
             // Si le token n'est pas présent, redirige vers la page de connexion
